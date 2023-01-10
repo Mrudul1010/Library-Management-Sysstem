@@ -1,0 +1,47 @@
+.bookList h1{
+    text-align: center;
+}
+.books_section{
+    margin-left: 61px;
+}
+.book_card{
+    border: 2px solid #bdb5b5;
+    background-color: #eaeaea;
+    /* display: inline-flex; */
+    /* flex-direction: column; */
+    width: 680px;
+    height: 320px;
+    margin: 8px auto;
+    text-align: center;
+    box-shadow: 5px 5px 5px #bdb5b5;
+    align-items: center;
+}
+.book_card button{
+    width: 90px;
+    height: 30px;
+    /* margin-left: 150px; */
+    background-color: #eaeaea;
+    border: 1px solid #ff6c6c;
+    border-radius: 3px;
+    color: #ff6c6c;
+    margin: 5px;
+}
+.book_card button:hover{
+    background-color: #ff6c6c;
+    color: aliceblue;
+}
+.book_card{
+    display: flex;
+    justify-content: space-evenly;
+}
+.others{
+    margin-left: 5px;
+    text-align: left;
+    width: 250px;
+}
+.pic{
+    width: 180px;
+}
+.pic img{
+    height: 250px;
+}

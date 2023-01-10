@@ -1,0 +1,28 @@
+label{
+    color: white
+}
+
+.all{
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+    background-color: #0f1e0f;
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    /* margin-left: 50px; */
+    
+}
+.forms{
+    margin-right: 10px;
+    /* margin-left: 5px; */
+    margin-top: 80px;
+}
+.image img{
+    margin-top: 80px;
+}
+.all h1{
+    text-align: center;
+    height: 30px;
+    padding-left: 10px;
+}

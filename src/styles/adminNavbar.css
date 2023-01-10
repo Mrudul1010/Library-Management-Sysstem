@@ -1,0 +1,23 @@
+.adminNAv{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    align-items: center;
+    background-color: #bdb5b5;
+} 
+.lists li{
+    text-decoration: none;
+    margin: 0px 20px;
+    color: black;
+    display: flex;
+    display: inline;
+}
+.lists a{
+    color: black;
+    text-decoration: none;
+}
+.lists a:hover{
+    background-color: black;
+    color: white;
+}
+

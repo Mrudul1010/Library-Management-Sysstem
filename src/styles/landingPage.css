@@ -1,0 +1,43 @@
+.landingpage{
+    margin: 0;
+    background-image: url("../../public/images/bg.jpg");
+    /* background-image:  url(https://t3.ftcdn.net/jpg/03/03/57/00/240_F_303570054_NXBYGgQABt5HPUkRgi9SjQVgMbD7iymv.jpg) ; */
+    background-size: cover;
+    height: 90vh;
+    /* margin-top: 15%; */
+    padding-top: 9%;
+}
+
+.main{
+    width: 500px;
+    height:250px;
+    text-align: center;
+    margin: auto;
+    /* padding-top: 25%; */
+    padding: 10%;
+    background-color: white;
+    box-shadow: 10px 10px 10px grey;
+}
+
+.main h1{
+    margin: 0;
+    padding: 0;
+}
+
+.selection {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.selection img{
+    padding: 20px;
+}
+
+.selection a{
+    text-decoration: none ;
+    border: 1px solid rgb(63, 62, 62);
+    color: black;
+    padding: 10px;
+}
+
