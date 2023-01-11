@@ -1,28 +1,40 @@
 label{
     color: white
 }
-
 .all{
-    display: flex;
+    display: grid;
     justify-content: center;
-    margin-top: 23px;
-    background-color: #0f1e0f;
-    width: 80%;
+    background-color: #041b24;
+    width: 60%;
     height: 500px;
     margin: auto;
-    /* margin-left: 50px; */
-    
-}
-.forms{
-    margin-right: 10px;
-    /* margin-left: 5px; */
-    margin-top: 80px;
+    margin-top: 55px;
+    border-radius: 20px;
 }
 .image img{
-    margin-top: 80px;
+   width: 80%;
+   height: 300px;
+   margin-top: 20px;
+}
+.forms{
+    height: 200px;
 }
 .all h1{
-    text-align: center;
+    color: white;
+}
+.usercontents{
+    display: flex;
+    margin-top: -80px;
+}
+.age button{
     height: 30px;
-    padding-left: 10px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-left: 35px;
+
+}
+.age button:hover{
+    background-color: #041b24;
+    color: white;
 }

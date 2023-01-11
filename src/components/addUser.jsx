@@ -25,7 +25,10 @@ const AddUser = () => {
 
     return ( 
         <div className='all'>
+            <div className='heading'>
             <h1>Add User</h1>
+            </div>
+            <div className='usercontents'>
             <div className="image">
                 <img src="https://st4.depositphotos.com/1003924/22950/i/450/depositphotos_229502188-stock-photo-book-open-old-wisdom-desk.jpg" alt="" />
             </div>
@@ -41,16 +44,18 @@ const AddUser = () => {
                <input value={age} onChange={(e)=>setAge(e.target.value)} type="number" placeholder='Enter Your Age' />
                </label>
                <label htmlFor="">Email:
-                <input value={email} onChange={(e)=>setEmail(e.target.value)} type="email" />
+                <input value={email} onChange={(e)=>setEmail(e.target.value)} type="email" placeholder='Enter Email' />
                </label>
                <label htmlFor="">Phone:
-                <input value={phoneNumber} onChange={(e)=>setNumber(e.target.value)} type="tel" minLength='10' maxlength='10' />
+                <input value={phoneNumber} onChange={(e)=>setNumber(e.target.value)} type="tel" minLength='10' maxlength='10' placeholder='Enter Phonenumber' />
                </label>
                <button>Submit</button>
               </div>
              </form>
             </div>
+            </div>
         </div>
+        
      );
 }
  

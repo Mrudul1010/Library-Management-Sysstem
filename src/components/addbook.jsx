@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import '../styles/addbook.css'
 const Addbook = () => {
     let[title,setTitle] = useState("")
     let[categories,setCategories] = useState("")
     let[authors,setAuthors] = useState("")
-    let[page,setPage] = useState("")
-    let[short,setShort] = useState("")
-    let[long,setLong] = useState("")
+    let[pageCount,setPage] = useState("")
+    let[shortDescription,setShort] = useState("")
+    let[longDescription,setLong] = useState("")
     let[thumbnailUrl,setthumbnailUrl] = useState("")
 
     let navigate = useNavigate()
@@ -14,7 +15,7 @@ const Addbook = () => {
     let handleSubmit = (e) =>{
         e.preventDefault() 
         //data to be posted
-        let bookData = {title,categories,authors,page,short,long,thumbnailUrl}
+        let bookData = {title,categories,authors,pageCount,shortDescription,longDescription,thumbnailUrl}
         //posting to server
         fetch(`http://localhost:2000/books`,{
             method:'POST',
@@ -36,13 +37,13 @@ const Addbook = () => {
                     <div className="categories"></div>
                     <input value={categories} onChange={(e)=>setCategories(e.target.value)} type="text" placeholder="Enter categories" />
                     <div className="pageCount"></div>
-                    <input value={page} onChange={(e)=>setPage(e.target.value)} type="number" placeholder="Enter page count" />
+                    <input value={pageCount} onChange={(e)=>setPage(e.target.value)} type="number" placeholder="Enter page count" />
                     <div className="shortDescription"></div>
-                    <textarea value={short} onChange={(e)=>setShort(e.target.value)} name="" id="" cols="30" rows="10"></textarea>
+                    <textarea value={shortDescription} onChange={(e)=>setShort(e.target.value)} name="" id="" cols="50" rows="9" placeholder="shortDesc"></textarea>
                     <div className="longDescription"></div>
-                    <textarea value={long} onChange={(e)=>setLong(e.target.value)} name="0" id="" cols="30" rows="10"></textarea>
+                    <textarea value={longDescription} onChange={(e)=>setLong(e.target.value)} name="0" id="" cols="70" rows="10" placeholder="LongDesc"></textarea>
                     <div className="thumbnailUrl"></div>
-                    <input value={thumbnailUrl} onChange={(e)=>setthumbnailUrl(e.target.value)} type="text" />
+                    <input value={thumbnailUrl} onChange={(e)=>setthumbnailUrl(e.target.value)} type="text" placeholder="thumbnail URL" />
                     <button>Add Book</button>
                 </form>
 

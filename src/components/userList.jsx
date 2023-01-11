@@ -1,4 +1,5 @@
 import { useState,useEffect } from "react";
+import '../styles/userList.css'
 const UserList = () => {
     let[user,setUser] = useState([])
     useEffect(()=>{

@@ -1,0 +1,25 @@
+.addBook{
+    background-color: #041b24;
+    width: 45%;
+    margin: auto;
+    height: 850px;
+    margin-top: -10px;
+    border-radius: 10px;
+
+}
+.form{
+    margin-left:40px;
+}
+.addBook h1{
+ color: white;
+}
+input{
+    outline: none;
+}
+.form button{
+    border-radius: 3px;
+}
+.form button:hover{
+    background-color: #041b24;
+    color: white;
+}

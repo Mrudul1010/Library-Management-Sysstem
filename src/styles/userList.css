@@ -1,0 +1,19 @@
+.userList h1{
+    text-align: center;
+}
+.usersection{
+    margin-left: 15px;
+}
+.username{
+    border: 2px solid #bdb5b5;
+    background-color: #041b24;
+    color: white;
+    display: inline-flex;
+    flex-direction: column;
+    width: 380px;
+    height: 320px;
+    margin: 8px auto;
+    text-align: center;
+    box-shadow: 5px 5px 5px #0a192fa6;
+    align-items: center;
+}
